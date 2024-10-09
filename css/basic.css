@@ -12,4 +12,10 @@
     display: flex;
     flex-direction: row;
     background-color: blue;
+}ol{
+    display: flex;
+}
+
+.menuItem{
+    display: flex;
 }
