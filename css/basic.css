@@ -1,40 +1,60 @@
-body{
-    margin: 0px;
-    padding: 1px;
+body {
+  margin: 0px;
+  padding: 1px;
 }
 
-body *{
-    text-align: center;
+body * {
+  text-align: center;
 }
 
+div {
+  width: 100%;
+  /* display: flex; */
+  text-align: center;
+  height: fit-content;
+  unicode-bidi: isolate;
 
-.product{
-    width: 20%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    background-color: blue;
 }
 
-ul{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    margin-block: 0px;
-    margin-inline: 0px;
-    /* padding-inline: 0px; */
+.product {
+  width: 20%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
 }
 
-.menuItem{
-    display: flex;
-    text-align: center;
+ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  margin-block: 0px;
+  margin-inline: 0px;
+  /* padding-inline: 0px; */
 }
 
-a{
-    width: 100%;
-    padding: 20px; 
+.menuItem {
+  display: flex;
+  text-align: center;
 }
 
-a:hover{
-    background-color:rgb(255, 254, 211) ;
+a {
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  padding: 20px;
+  margin: auto;
+}
+
+a:hover {
+  background-color: rgb(255, 254, 211);
+  margin-left: 3px;
+  width: 100%;
+  height: fit-content;
+}
+
+.pay{
+    height: 60px;
+    padding: 5px;
 }
