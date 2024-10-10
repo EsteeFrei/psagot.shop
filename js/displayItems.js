@@ -1,8 +1,8 @@
 
 import  data  from '.././products.json' with {type: "json"};
+console.log("gyjfcjxzytshxy");
 
 console.log(data.notebooks);
-console.log();
 
 
 function displayItems() {

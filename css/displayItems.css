@@ -4,12 +4,12 @@
     height: 950px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 200px; 
+    gap: 10px; 
     
 } 
 .item{
-    width:20%;
-    height: 20%;
+    width:10%;
+    height: 10%;
     border: 1px solid black;
     
 }
