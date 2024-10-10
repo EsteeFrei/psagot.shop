@@ -7,12 +7,6 @@ body *{
     text-align: center;
 }
 
-#content{
-    width:80%;
-    height: 90%;
-    background-color: aqua;
-    display: flex;
-}
 
 .product{
     width: 20%;

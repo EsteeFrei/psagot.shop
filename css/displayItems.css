@@ -1,0 +1,23 @@
+
+#content {
+    width: 80%; /* או 1800px אם זה מה שאתה רוצה */
+    max-width: 1800px; /* להבטיח שזה לא יעלה על 1800px */
+    height: auto; /* תן לגובה להתאמן לפי התוכן */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 עמודות */
+    gap: 10px; 
+}
+
+.item {
+    border: 1px solid black;
+    display: flex; /* לאלמנטי ה-item */
+    justify-content: center; /* מרכז את התמונה */
+    align-items: center; /* מרכז את התמונה */
+    flex-direction: column;
+}
+
+.img {
+    max-width: 100%; /* תן לתמונה להתאמן */
+    max-height: 100%; /* תן לתמונה להתאמן */
+    object-fit: cover; /* לשמור על יחס גובה ורוחב */
+}
