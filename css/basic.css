@@ -5,8 +5,6 @@ body{
 
 body *{
     text-align: center;
-    margin: auto;
-
 }
 
 #content{
@@ -30,7 +28,7 @@ ul{
     padding: 0px;
     margin-block: 0px;
     margin-inline: 0px;
-    padding-inline: 0px;
+    /* padding-inline: 0px; */
 }
 
 .menuItem{
