@@ -1,0 +1,43 @@
+@media (max-width:371) {
+    
+}
+@media (max-width:596) {
+    
+}
+@media (max-width:769) {
+    
+}
+@media (max-width:831) {
+    
+}
+@media (min-width:831) {
+    
+}
+
+.sidebar{
+    width: 120px ;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.navbar{
+    
+    height: fit-content;
+    padding: 2px;
+
+
+}
+
+ul{
+    flex-direction: column;
+    
+}
+
+.menuItem{
+    width: 100%;
+    padding: 20%;
+    height: fit-content;
+    margin: auto;
+}
