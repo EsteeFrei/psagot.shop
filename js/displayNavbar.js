@@ -1,7 +1,10 @@
+
 function load_page() {
   console.log("hellllloooooooo");
   displaybar();
 }
+
+
 function displaybar() {
   let cutegories = ["כלי כתיבה", "מחברות", "מחברות קמפוס", "מחברות יצירה"];
   let routes = [

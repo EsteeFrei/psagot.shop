@@ -2,32 +2,62 @@
 import data from '.././products.json' with {type: "json"};
 
 
-    
+const currentUrl = window.location.href;
+const currentPage = currentUrl.split('/').pop();
+
+console.log(currentPage);
+
+switch (currentPage) {
+    case "paintingTools.html": {
+        displayItems(data.craft)
+        break;
+    }
+    case "notebooks.html": {
+        displayItems(data.notebooks)
+        break;
+    }
+}
 
 function displayItems(items) {
     let content = document.getElementById('content')
     let item;
 
-    let title = document.getElementById('title')
-    title.classList.add('title')
-    
-    let titleDelivery= document.createElement('p')
-    titleDelivery.classList.add('titleDelivery')
-    titleDelivery.textContent="משלוחים חינם בפסגות אפק"
+    if (currentPage == "paintingTools.html") {
+        let title = document.getElementById('title')
+        console.log(title);
 
-    let titleType= document.createElement('h1')
-    titleType.classList.add('titleType')
-    titleType.textContent="כלי כתיבה"
+        let titleDelivery = document.createElement('p')
+        titleDelivery.classList.add('titleDelivery')
+        titleDelivery.textContent = "משלוחים חינם בפסגות אפק"
 
+        let titleType = document.createElement('h1')
+        titleType.classList.add('titleType')
+        titleType.textContent = "כלי כתיבה"
 
-    let titleImg = document.createElement('img')
-    titleImg.classList.add('titleImg')
-    titleImg.src = "../imgs/pic1.png"
+        let titleImg = document.createElement('img')
+        titleImg.classList.add('titleImg')
+        titleImg.src = "../imgs/pic1.png"
 
-    title.appendChild(titleDelivery)
-    title.appendChild(titleType)
-    title.appendChild(titleImg)
-   
+        title.appendChild(titleDelivery)
+        title.appendChild(titleType)
+        title.appendChild(titleImg)
+    }
+    else{
+        let title = document.getElementById('title')
+        console.log(title);
+
+        let titleType = document.createElement('h1')
+        titleType.classList.add('titleType')
+        titleType.textContent = "מחברות"
+
+        let titleTxt = document.createElement('p')
+        titleTxt.classList.add('titleTxt')
+        titleTxt.textContent = "המלאי בקטגוריה זו משתנה. יסופקו מחברות של חברות IQ / Uni / קלסריקה בהתאם למלאי"
+
+        title.appendChild(titleType)
+        title.appendChild(titleTxt)
+    }
+
     for (let i = 0; i < items.length; i++) {
         item = document.createElement('div')
         item.classList.add('item')
@@ -67,4 +97,4 @@ function displayItems(items) {
         content.appendChild(item)
     }
 }
-displayItems(data.craft)
+
