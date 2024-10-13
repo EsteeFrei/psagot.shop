@@ -1,9 +1,8 @@
 function load_page() {
   console.log("hellllloooooooo");
-  displayNavbar();
+  displaybar();
 }
-function displayNavbar() {
-  let bar, nav, li, a, div, img;
+function displaybar() {
   let cutegories = ["כלי כתיבה", "מחברות", "מחברות קמפוס", "מחברות יצירה"];
   let routes = [
     "../html/paintingTools.html",
@@ -11,11 +10,19 @@ function displayNavbar() {
     "../html/paintingTools.html",
     "../html/paintingTools.html",
   ];
-  bar = document.getElementById("sidebar");
-  nav = document.createElement("nav");
-  console.log("display items");
+  let bar = document.getElementById("sidebar");
+  creatNavBar(cutegories, routes, bar);
+  creatSelectBar(cutegories, routes, bar);
+  navigationImages(bar);
+}
 
+function creatNavBar(cutegories, routes, bar) {
+  let nav, li, a;
+
+  nav = document.createElement("nav");
+  nav.classList.add("navbar");
   bar.appendChild(nav);
+
   for (i in cutegories) {
     li = document.createElement("li");
     li.classList.add("menuItem");
@@ -26,7 +33,29 @@ function displayNavbar() {
     li.appendChild(a);
     nav.appendChild(li);
   }
+}
 
+function creatSelectBar(cutegories, routes, bar) {
+  let select, option;
+  select = document.createElement("select");
+  for (i in cutegories) {
+    option = document.createElement("option");
+    // option.classList.add("menuItem");
+    option.innerText=cutegories[i]
+    option.value = routes[i];
+    select.appendChild(option);
+  }
+  select.addEventListener('change', function() {
+    let url = this.value;
+    if (url) {
+      window.location.href = url;
+    }
+  });
+  bar.appendChild(select);
+}
+
+function navigationImages(bar) {
+  let a, img, div;
   div = document.createElement("div");
   div.classList.add("pay");
   bar.appendChild(div);
@@ -36,16 +65,14 @@ function displayNavbar() {
   img = document.createElement("img");
   img.src = "https://img.icons8.com/pulsar-gradient/48/shopping-cart.png";
   a.appendChild(img);
-  div = document.createElement('div')
-  div.id = 'logo'
-  
+  div = document.createElement("div");
   a = document.createElement("a");
   a.href = "./homePage.html";
   div.appendChild(a);
   img = document.createElement("img");
-  img.src = '../imgs/logo.png'
+  img.src = "../imgs/logo.png";
   a.appendChild(img);
 
-  img.classList.add('logo')
-  bar.appendChild(div)
+  img.classList.add("logo");
+  bar.appendChild(div);
 }
