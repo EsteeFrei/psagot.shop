@@ -39,4 +39,16 @@ function displayNavbar() {
   img = document.createElement("img");
   img.src = "https://img.icons8.com/pulsar-gradient/48/shopping-cart.png";
   a.appendChild(img);
+  div = document.createElement('div')
+  div.id = 'logo'
+  
+  a = document.createElement("a");
+  a.href = "./homePage.html";
+  div.appendChild(a);
+  img = document.createElement("img");
+  img.src = '../imgs/logo.png'
+  a.appendChild(img);
+
+  img.classList.add('logo')
+  bar.appendChild(div)
 }
