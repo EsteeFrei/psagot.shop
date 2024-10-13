@@ -1,23 +1,104 @@
-
 #content {
-    width: 80%; /* או 1800px אם זה מה שאתה רוצה */
-    max-width: 1800px; /* להבטיח שזה לא יעלה על 1800px */
-    height: auto; /* תן לגובה להתאמן לפי התוכן */
+    width: 80%;
+    max-width: 1800px;
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 עמודות */
-    gap: 10px; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: rgb(241, 253, 253);
+    padding-top: 4px;
 }
 
 .item {
-    border: 1px solid black;
-    display: flex; /* לאלמנטי ה-item */
-    justify-content: center; /* מרכז את התמונה */
-    align-items: center; /* מרכז את התמונה */
+    width:90%;
+    height: 90%;
+    border-top: 2px solid rgb(165, 110, 139);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    padding: 2px;
+    background-color: white;
+}
+    
+
+
+.txtDiv{
+    background-color: rgb(245, 232, 244);
+    width:100%;
+    margin-top: 5%;
 }
 
 .img {
-    max-width: 100%; /* תן לתמונה להתאמן */
-    max-height: 100%; /* תן לתמונה להתאמן */
-    object-fit: cover; /* לשמור על יחס גובה ורוחב */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.imgDiv{
+    width:100%;
+    height: 140px;
+}
+
+.price {
+    display: flex;
+    color: rgb(240, 101, 229);
+    margin-right: 2px;
+}
+
+.buyDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cartBtn{
+    background-color: rgb(172, 175, 176);
+    border: none;
+    border-radius: 4px;
+    width:90px;
+    height: 30px;
+    margin-top: 4%;
+    margin-right: 3px;
+}
+
+.cartBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.title{
+    width: 80%;
+    max-width: 1800px;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleImg{
+    width:100%;
+    height: 100%; 
+}
+
+.titleType{
+    width:100%;
+    text-align: right;
+}
+
+ .titleDelivery{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(245, 232, 244);
+    color: rgb(240, 101, 229);
+    text-align: center;
+    margin-bottom: 0px;
+ }
+
+ 
+.pageing{
+    text-decoration: none;
+    color: black;
+    text-align: left;
 }
