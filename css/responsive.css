@@ -15,18 +15,21 @@
 }
 
 .sidebar{
-    width: 120px ;
+    width: 250px ;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
+    padding:0px 0px 0px 30px;
+    background-color: rgb(255, 252, 249);
+    border-left: 1px rgb(100, 100, 100) solid;
 }
 
 .navbar{
     
     height: fit-content;
-    padding: 2px;
-
+    padding: 30px 0px;
+    border-bottom: 1px rgb(100, 100, 100) solid ;
 
 }
 
@@ -36,8 +39,7 @@ ul{
 }
 
 .menuItem{
-    width: 100%;
-    padding: 20%;
-    height: fit-content;
-    margin: auto;
+    margin: 0px;
+    flex-direction: column;
+
 }
