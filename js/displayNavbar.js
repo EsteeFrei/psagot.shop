@@ -1,7 +1,10 @@
+
 function load_page() {
   console.log("hellllloooooooo");
   displayNavbar();
 }
+
+
 function displayNavbar() {
   let bar, nav, li, a, div, img;
   let cutegories = ["כלי כתיבה", "מחברות", "מחברות קמפוס", "מחברות יצירה"];
