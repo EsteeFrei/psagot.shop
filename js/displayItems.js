@@ -16,6 +16,10 @@ switch (currentPage) {
         displayItems(data.notebooks)
         break;
     }
+    default:{
+        displayItems(data.craft)
+        break;
+    }
 }
 
 function displayItems(items) {

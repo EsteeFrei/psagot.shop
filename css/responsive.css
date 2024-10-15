@@ -1,5 +1,6 @@
 .sidebar {
-  position: absolute;
+  position: fixed;  
+  top: 0;
   display: flex;
   top: 0;
   right: 0;
@@ -8,7 +9,7 @@
 
 @media (min-width: 830px) {
   .sidebar {
-    width: 22%;
+    width: 20%;
     height: 100%;
     padding: 0px 30px 0px 30px;
     flex-direction: column;
